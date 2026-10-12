@@ -1,0 +1,52 @@
+{
+  "_notes": [
+    "Put the source files in video-edit/media/ (git-ignored).",
+    "theme colours are PLACEHOLDERS until the Figma file (Matis Revamp 002) is readable.",
+    "B-roll 1: 'Faith chat' (Drive 1PHdrcQYIOf-TAk-tJu_m38_Erg7kN42V); 'near' is the A-roll time given in the brief (~6:13). src_start is picked after watching the clip.",
+    "B-roll 2: 'ai-bible.mp4' (Drive 1AkcnLpSCaY6_fI9-qCLPLO5DwtO-3buX); placement not given yet, so it is skipped."
+  ],
+  "aroll": "media/aroll.mp4",
+  "transcript": "transcript.txt",
+  "whisper_model": "small.en",
+  "build_dir": "build",
+  "caption_chunking": {"max_words": 3, "max_chars": 22, "max_gap": 0.4},
+  "theme": {
+    "caption_font": "Inter ExtraBold",
+    "caption_size": 64,
+    "caption_margin_v": 96,
+    "caption_text": "#FFFFFF",
+    "caption_highlight": "#F2B544",
+    "caption_outline": "#14161C",
+    "title_bg": "#1B2238",
+    "title_text": "#FFFFFF",
+    "bg_top": "#F6F1E9",
+    "bg_bottom": "#E4D8C6",
+    "phone_finish": "natural"
+  },
+  "sfx": {
+    "title": "chime.wav",
+    "title_gain_db": -2,
+    "broll_in": "whoosh_in.wav",
+    "broll_out": "whoosh_out.wav",
+    "broll_gain_db": 0
+  },
+  "broll": [
+    {
+      "file": "media/faith_chat.mp4",
+      "anchor": "And yes, the video player is working",
+      "near": "6:13",
+      "lead": 0.4,
+      "duration": 5.0,
+      "src_start": 0,
+      "orientation": "portrait"
+    },
+    {
+      "file": "media/ai_bible.mp4",
+      "skip": true,
+      "anchor": null,
+      "duration": 5.0,
+      "src_start": 0,
+      "orientation": "portrait"
+    }
+  ]
+}
